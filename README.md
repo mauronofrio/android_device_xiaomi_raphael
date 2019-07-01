@@ -1,7 +1,7 @@
-# android_device_xiaomi_cepheus
-For building TWRP for Xiaomi Mi 9
+# android_device_xiaomi_raphael
+For building TWRP for Xiaomi Redmi K20 Pro
 
-TWRP device tree for Xiaomi Mi 9
+TWRP device tree for Xiaomi Redmi K20 Pro
 
 ## Features
 
@@ -33,21 +33,21 @@ repo sync
 Then add these projects to .repo/manifest.xml:
 
 ```xml
-<project path="device/xiaomi/cepheus" name="mauronofrio/android_device_xiaomi_cepheus" remote="github" revision="android-9.0" />
+<project path="device/xiaomi/raphael" name="mauronofrio/android_device_xiaomi_raphael" remote="github" revision="android-9.0" />
 ```
 
 Finally execute these:
 
 ```
 . build/envsetup.sh
-lunch omni_cepheus-eng
+lunch omni_raphael-eng
 mka recoveryimage ALLOW_MISSING_DEPENDENCIES=true # Only if you use minimal twrp tree.
 ```
 
 To test it:
 
 ```
-fastboot boot out/target/product/cepheus/recovery.img
+fastboot boot out/target/product/raphael/recovery.img
 ```
 
 ## Other Sources
