@@ -48,17 +48,9 @@ void load_properties(const char *model) {
 
 void vendor_load_properties() {
     std::string device_region = android::base::GetProperty("ro.boot.hwc", "");
-    if (device_region == "CN")
-    {
-        load_properties("raphael");
-    }
-    else if (device_region == "INDIA")
+    if (device_region == "INDIA")
     {
         load_properties("raphaelin");
-    }
-    else if (device_region == "GLOBAL")
-    {
-        load_properties("raphael");
     }
     else
     {
