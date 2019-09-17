@@ -52,7 +52,7 @@ fastboot boot out/target/product/raphael/recovery.img
 
 ## Other Sources
 
-Kernel Sources: using precompiled stock kernel
+Kernel Sources: https://github.com/acervenky/raphaelquax
 
 ## Thanks
 
