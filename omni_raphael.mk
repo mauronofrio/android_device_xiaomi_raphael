@@ -32,7 +32,9 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.device \
     ro.product.name \
-    ro.build.product
+    ro.build.product \
+    ro.bootimage.build.date.utc \
+    ro.build.date.utc
 
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \

@@ -47,6 +47,8 @@ void load_properties(const char *model) {
 
 
 void vendor_load_properties() {
+    property_set("ro.bootimage.build.date.utc", "1546335651");
+    property_set("ro.build.date.utc", "1546335651");
     std::string device_region = android::base::GetProperty("ro.boot.hwc", "");
     if (device_region == "CN")
     {
