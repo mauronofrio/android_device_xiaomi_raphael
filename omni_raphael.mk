@@ -26,11 +26,12 @@ $(call inherit-product, vendor/omni/config/common.mk)
 PRODUCT_DEVICE := raphael
 PRODUCT_NAME := omni_raphael
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Xiaomi Redmi K20 Pro
+#PRODUCT_MODEL := Xiaomi Redmi K20 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.device \
+    ro.product.model \
     ro.product.name \
     ro.build.product \
     ro.bootimage.build.date.utc \
