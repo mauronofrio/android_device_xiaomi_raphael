@@ -16,11 +16,6 @@ Works:
 - Backup/Restore (Needs more testing)
 - USB OTG
 
-
-TO-DO:
-
-- Vibration support
-
 ## Compile
 
 First checkout minimal twrp with omnirom tree:

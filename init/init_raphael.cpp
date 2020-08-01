@@ -39,10 +39,11 @@
 namespace android {
 namespace init {
 
-void load_properties(const char *model) {
+void load_properties(const char *model, const char *name) {
+    property_set("ro.product.device", model);
     property_set("ro.product.name", model);
     property_set("ro.build.product", model);
-    property_set("ro.product.device", model);
+    property_set("ro.product.model", name);
 }
 
 
@@ -52,19 +53,19 @@ void vendor_load_properties() {
     std::string device_region = android::base::GetProperty("ro.boot.hwc", "");
     if (device_region == "CN")
     {
-        load_properties("raphael");
+        load_properties("raphael", "Redmi K20 Pro");
     }
     else if (device_region == "INDIA")
     {
-        load_properties("raphaelin");
+        load_properties("raphaelin", "Redmi K20 Pro");
     }
     else if (device_region == "GLOBAL")
     {
-        load_properties("raphael");
+        load_properties("raphael", "Mi 9T Pro");
     }
     else
     {
-        load_properties("raphael");
+        load_properties("raphael", "Redmi K20 Pro");
     }
 }
 

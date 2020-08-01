@@ -63,7 +63,7 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 #TARGET_USE_SDCLANG := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := raphael
+TARGET_OTA_ASSERT_DEVICE := raphael, raphaelin
 
 # Avb
 BOARD_AVB_ENABLE := true
